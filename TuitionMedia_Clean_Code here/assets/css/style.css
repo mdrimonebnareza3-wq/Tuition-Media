@@ -1,0 +1,158 @@
+:root {
+    --tm-primary: #123a63;
+    --tm-secondary: #0b6e75;
+    --tm-accent: #f6b73c;
+    --tm-soft: #f5f8fc;
+}
+
+body {
+    background: #f7f9fc;
+    color: #1d2a38;
+}
+
+.tm-navbar {
+    background: linear-gradient(90deg, #0e2d4a, #0b6e75);
+}
+
+.brand-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin-right: 6px;
+    border-radius: 10px;
+    background: var(--tm-accent);
+    color: #14202c;
+}
+
+.hero {
+    overflow: hidden;
+    border-radius: 0 0 32px 32px;
+    background: linear-gradient(
+        120deg,
+        rgba(14, 45, 74, 0.96),
+        rgba(11, 110, 117, 0.9)
+    );
+    color: #ffffff;
+}
+
+.hero .container {
+    display: flex;
+    min-height: 470px;
+    align-items: center;
+}
+
+.hero-card {
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+}
+
+.section-title {
+    color: var(--tm-primary);
+    font-weight: 800;
+}
+
+.card {
+    border: 0;
+    border-radius: 16px;
+}
+
+.shadow-soft {
+    box-shadow: 0 12px 30px rgba(18, 58, 99, 0.09);
+}
+
+.stat-card {
+    border-left: 5px solid var(--tm-secondary);
+    background: #ffffff;
+}
+
+.avatar-circle {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d9edf7, #d3f1e9);
+    color: var(--tm-primary);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.filter-box {
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.table-card {
+    overflow: hidden;
+}
+
+.table-card .table {
+    margin-bottom: 0;
+}
+
+.form-control,
+.form-select {
+    padding: 0.68rem 0.85rem;
+    border-radius: 10px;
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+.dashboard-sidebar {
+    border-radius: 18px;
+    background: var(--tm-primary);
+}
+
+.dashboard-sidebar a {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 9px;
+    color: #dce9f4;
+    text-decoration: none;
+}
+
+.dashboard-sidebar a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+.rating-stars {
+    color: var(--tm-accent);
+}
+
+.empty-state {
+    padding: 48px 20px;
+    color: #718096;
+    text-align: center;
+}
+
+.badge {
+    font-weight: 600;
+}
+
+.profile-banner {
+    border-radius: 20px;
+    background: linear-gradient(110deg, var(--tm-primary), var(--tm-secondary));
+    color: #ffffff;
+}
+
+.footer-spacer {
+    min-height: 24px;
+}
+
+@media (max-width: 768px) {
+    .hero .container {
+        min-height: 400px;
+    }
+
+    .display-4 {
+        font-size: 2.2rem;
+    }
+}
